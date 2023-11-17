@@ -12,7 +12,7 @@ export default {
       }
     },
     fontFamily: {
-      "League Spartan": "'League Spartan', sans-serif"
+      "league-spartan": "'League Spartan', sans-serif"
     },
     colors: {
       "dark-grey": "hsl(0, 0%, 63%)",
@@ -22,8 +22,9 @@ export default {
     },
     fontSize: {
       base: "0.75rem",
-      l: "1.75rem",
-      xl: "2.25rem"
+      md: "1rem",
+      l: "2.25rem",
+      xl: "2.75rem"
     },
     screens: {
       tablet: "30rem",

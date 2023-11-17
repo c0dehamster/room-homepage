@@ -8,7 +8,7 @@ import { ControlButtons } from "./components/ControlButtons"
 
 const App = () => {
 	return (
-		<div className="grid grid-cols-layout-mobile desktop:grid-cols-layout-desktop">
+		<div className="font-league-spartan grid grid-cols-layout-mobile desktop:grid-cols-layout-desktop">
 			<Header></Header>
 			<Slider></Slider>
 			<ControlButtons></ControlButtons>

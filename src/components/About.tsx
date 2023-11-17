@@ -1,6 +1,6 @@
 export const About = () => {
 	return (
-		<section className="about">
+		<section className="about | col-span-2">
 			<h2 className="about__heading">About our furniture</h2>
 
 			<p className="about__description">

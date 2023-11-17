@@ -6,19 +6,25 @@ import { Hero } from "./components/Hero"
 import { Slider } from "./components/Slider"
 import { ControlButtons } from "./components/ControlButtons"
 
-import imageAboutDark from "./images/image-about-dark.jpg"
-import imageAboutLight from "./images/image-about-light.jpg"
-
 const App = () => {
 	return (
-		<div>
+		<div className="grid grid-cols-layout-mobile desktop:grid-cols-layout-desktop">
 			<Header></Header>
 			<Slider></Slider>
 			<ControlButtons></ControlButtons>
 			<Hero></Hero>
-			<img src={imageAboutDark} alt="" />
+
+			<img
+				src="./images/image-about-dark.jpg"
+				alt=""
+				className="max-desktop:col-span-2"
+			/>
 			<About></About>
-			<img src={imageAboutLight} alt="" />
+			<img
+				src="./images/image-about-light.jpg"
+				alt=""
+				className="max-desktop:col-span-2"
+			/>
 		</div>
 	)
 }

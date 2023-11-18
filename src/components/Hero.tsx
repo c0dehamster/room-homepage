@@ -1,6 +1,6 @@
 export const Hero = () => {
 	return (
-		<section className="hero | col-span-2 desktop:row-start-1 desktop:row-end-3 desktop:col-start-3 desktop:col-end-5 px-8 py-14 grid gap-3">
+		<section className="hero | col-span-2 desktop:row-start-1 desktop:row-end-3 desktop:col-start-3 desktop:col-end-5 px-8 py-14 desktop:p-24 flex flex-col justify-start items-start gap-3">
 			<h1 className="text-l desktop:text-xl font-bold leading-9 desktop:leading-[2.75rem] desktop:tracking-tight">
 				Discover innovative ways to decorate
 			</h1>

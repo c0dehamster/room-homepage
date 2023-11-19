@@ -1,7 +1,7 @@
 export const Slider = () => {
 	return (
 		// Placeholder until the proper carousel is implemented
-		<div className="row-start-1 row-end-3 col-start-1 col-end-3">
+		<div className="col-start-1 col-end-2 row-start-1 row-end-2 tablet:col-end-3">
 			<ul className="slider">
 				<li className="slide">
 					<picture>
@@ -16,7 +16,7 @@ export const Slider = () => {
 						<img
 							src="./images/desktop-image-hero-1.jpg"
 							alt=""
-							className="slide__image"
+							className="slide__image | w-full"
 						/>
 					</picture>
 				</li>

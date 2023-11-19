@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "layout-mobile": "1fr, auto",
-        "layout-desktop": "1fr 1fr auto 1fr"
+        "layout-desktop": "1fr 1fr auto 1.05fr"
+      },
+      gridTemplateRows: {
+        "layout-desktop": "1fr 1fr 1fr"
       }
     },
     fontFamily: {

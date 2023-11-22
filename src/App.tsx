@@ -10,25 +10,29 @@ import { ControlButtons } from "./components/ControlButtons"
 
 const App = () => {
 	return (
-		<div className="font-league-spartan grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-layout-desktop">
+		<div className="font-league-spartan grid grid-cols-1 tablet:grid-cols-layout-tablet desktop:grid-cols-layout-desktop desktop:grid-rows-layout-desktop">
 			<Header></Header>
 			<Slider></Slider>
 			<ControlButtons></ControlButtons>
 			<Hero></Hero>
 
-			<img
-				src="./images/image-about-dark.jpg"
-				alt=""
-				className="max-w-full"
-			/>
+			<div className="grid place-items-center overflow-hidden">
+				<img
+					src="./images/image-about-dark.jpg"
+					alt=""
+					className="w-full desktop:h-full object-cover"
+				/>
+			</div>
 
 			<About></About>
 
-			<img
-				src="./images/image-about-light.jpg"
-				alt=""
-				className="max-w-full tablet:max-desktop:col-start-2 tablet:max-desktop:row-start-4"
-			/>
+			<div className="grid place-items-center overflow-hidden tablet:max-desktop:col-start-2 tablet:max-desktop:row-start-3">
+				<img
+					src="./images/image-about-light.jpg"
+					alt=""
+					className="w-full desktop:h-full object-cover"
+				/>
+			</div>
 		</div>
 	)
 }

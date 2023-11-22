@@ -10,7 +10,7 @@ import { ControlButtons } from "./components/ControlButtons"
 
 const App = () => {
 	return (
-		<div className="font-league-spartan grid grid-cols-1 tablet:grid-cols-layout-tablet desktop:grid-cols-layout-desktop desktop:grid-rows-layout-desktop">
+		<div className="font-league-spartan grid grid-cols-1 tablet:grid-cols-layout-tablet desktop:grid-cols-layout-desktop">
 			<Header></Header>
 			<Slider></Slider>
 			<ControlButtons></ControlButtons>

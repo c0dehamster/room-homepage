@@ -37,7 +37,7 @@ export const Header = () => {
 					<li className="nav__list-item | relative py-2 ">
 						<a
 							href="#0"
-							className="nav__link | group group focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline focus-visible:outline-white">
+							className="nav__link | group focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline focus-visible:outline-white">
 							<span
 								className="absolute left-[50%] right-[50%] bottom-0 h-[0.1rem] bg-white transition-[inset-inline] duration-150 ease-in group-hover:left-0 group-hover:right-0 "
 								area-hidden="true"></span>

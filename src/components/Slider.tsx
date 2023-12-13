@@ -2,7 +2,9 @@ import { motion } from "framer-motion"
 
 import data from "../assets/data.json"
 
-export const Slider = () => {
+export const Slider = ({ slideIndex }: { slideIndex: number }) => {
+	const offsetX = `calc(-${slideIndex} * 100% / 3)`
+
 	const slides = data.map((item) => {
 		return (
 			<li className="slide | w-1/3" key={item.id}>
@@ -18,7 +20,7 @@ export const Slider = () => {
 		<div className="slider-wrapper | col-start-1 col-end-2 row-start-1 row-end-2 tablet:col-end-3 overflow-hidden">
 			<motion.ul
 				className="slider | w-[300%] h-full overflow-hidden flex"
-				animate={{ x: -100 }}
+				animate={{ x: offsetX }}
 				transition={{ ease: "easeOut", duration: 0.5 }}
 			>
 				{slides}
